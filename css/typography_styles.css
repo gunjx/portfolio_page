@@ -1,0 +1,27 @@
+/*Typography*/
+
+.h1,
+.h2,
+.h3 {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  /* margin-top: 0; */
+  }
+
+body,
+p,
+li {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.intro p,
+.contact p {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+}
+
+.skills h2 {
+  text-align: center;
+  text-transform: uppercase;
+}

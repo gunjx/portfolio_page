@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  /* border: solid #D64078 2px; */
+}
+
+body {
+  background-image: url("../img/clean-background.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  margin: 0 10%;
+  max-width: 600px;
+}
+
+.h1 {
+  padding-bottom: 20px
+}
+
+.h2 {
+  padding-bottom: 15px
+}
+
+.slogan {
+  padding-top: 15px;
+}
+
+/*Colors*/
+
+.jumbotron {
+  background-color: #fffeea;
+  color: #34495e;
+}
