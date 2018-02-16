@@ -8,14 +8,15 @@
 
   <title>Contact</title>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Latest and minified CSS -->
+  <link rel="stylesheet" <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <!-- Custom styles for this template go here -->
-  <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
-  <link rel="stylesheet" href="css/typography_styles.css">
-  <link rel="stylesheet" href="css/other_styles.css">
+  <!-- Normalize CSS -->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+
+  <!-- Custom styles -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <!--[if lt IE 9]>
     <script src="dist/html5shiv.js">
     </script>
@@ -33,38 +34,47 @@
   <div class="nav">
     <div class="nav-left">
       <a href="index.html">Home</a>
-    </div> <!-- end nav-left -->
+    </div> <!-- /nav-left -->
     <div class="nav-right">
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="#">Work</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
-    </div> <!-- end nav-right -->
-  </div> <!-- end nav -->
-  <div class="jumbotron window">
+    </div> <!-- /nav-right -->
+  </div> <!-- /nav -->
+
+<div class="main">
+  <div class="jumbotron jumbotron--window">
     <div class="container">
       <header class="header">
         <h1 class="h1">Contact info</h1>
       </header>
-      <main class="contact">
-        <h2 class="h2">Drop me a line!</h2>
-        <p class="email">
-          Email me at:
-          <a href="mailto:spannagel.andreas@gmail.com">spannagel.andreas@gmail.com</a>.
-        </p>
-        <h2 class="h2">Schedule an appointment!</h2>
-        <p class="address">
-          Musterstraße 135<br>
-          12345 Köln, Germany<br>
-          0221 1234567
-        </p>
-        <p class="slogan">
-           Online marketing and web development can go hand in hand. Let's make it work for you, too.
-        </p>
-      </main>
-    </div> <!-- end container -->
-  </div> <!-- end jumbotron -->
+
+      <h2 class="h2">Drop me a line!</h2>
+      <p class="email">
+        <span class="glyphicon glyphicon-envelope"></span> <span>Email me at:
+        <a href="mailto:spannagel.andreas@gmail.com">spannagel.andreas@gmail.com</a>. </span>
+      </p>
+      <h2 class="h2">Schedule an appointment!</h2>
+      <p class="address">
+        <span class="glyphicon glyphicon-map-marker"></span> Musterstraße 135<br> <span class="glyphicon glyphicon-globe"></span> 12345 Köln, Germany<br>
+        <span class="glyphicon glyphicon-phone"></span> 0221 1234567
+      </p>
+      <p class="slogan">
+         Online marketing and web development can go hand in hand. Let's make it work for you, too.
+      </p>
+    </div> <!-- /container -->
+  </div> <!-- /main -->
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap core JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Script tags with JavaScript files -->
+
 </body>
 </html>

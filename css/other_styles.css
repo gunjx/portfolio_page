@@ -15,6 +15,8 @@
   padding-top: 60px;
 }
 
+/**** nav ****/
+
 .nav {
   background-color: black;
   position: fixed;
@@ -53,18 +55,21 @@
   color: #ff0;
 }
 
-.main {
-  margin: 10px auto;
-  width: 80%;
-}
+/**** shared ****/
 
-.main {
-  margin: 10px auto;
-  width: 80%;
+.h2 {
+  padding-bottom: 10px
 }
 
 .header {
   padding-bottom: 20px;
+}
+
+/**** about.html ****/
+
+.main {
+  margin: 10px auto;
+  width: 80%;
 }
 
 .image img {
@@ -102,13 +107,11 @@
   clear: both;
 }
 
-.window {
+/**** contact.html ****/
+
+.jumbotron--window {
   margin: 0 10%;
   max-width: 600px;
-}
-
-.h2 {
-  padding-bottom: 10px
 }
 
 .slogan {
@@ -117,7 +120,20 @@
 
 /*Colors*/
 
-.jumbotron {
+.jumbotron--banner {
+  background-image: url("../img/pexels-photo-grey-small.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  width: 80%;
+}
+
+.jumbotron--banner a {
+  color: lightblue;
+}
+
+.jumbotron--window {
   background-color: #fffeea;
   color: #34495e;
 }
