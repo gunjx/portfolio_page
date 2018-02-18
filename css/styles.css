@@ -14,7 +14,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 15px 10%;
+  padding: 15px 0;
+  z-index: 1;
 }
 
 .nav-left {
@@ -22,11 +23,13 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  margin-left: 10%;
   padding-left: 10px;
 }
 
 .nav-right {
   float: right;
+  margin-right: 10%;
   padding-right: 10px;
 }
 
@@ -49,19 +52,22 @@ body {
   padding-bottom: 20px;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 .window {
-  margin: 0px auto 10px;
-  padding: 10px 10px;
+  margin: 10px auto;
+  padding: 10px;
   width: 80%;
 }
 
 .row {
-  margin: -15px -15px;
+  margin: -10px -10px;
 }
 
-.col-md-4 {
-  padding-left: 10px;
-  padding-right: 10px;
+.col {
+  padding: 10px 10px;
 }
 
 .h2 {
@@ -84,34 +90,20 @@ body {
   max-width: 100%;
 }
 
-.column {
+/* .column {
   width: 33.3333333333333333%;
-  /* display: inline-block; */
   float: left;
   hyphens: auto;
-}
+} */
 
-.intro {
-  padding: 0 10px;
-}
-
-.skills {
-  padding: 0 10px;
-  padding-top: 10px;
-}
-
-#skill-list {
-  /* margin-left: 5%; */
-  padding-left: 20%;
-}
-
-.skills ul ul {
-  padding-left: 10%;
+.skills>ul {
+  padding-left: 22%;
+  padding-right: 20px;
 }
 
 .main-text {
   padding-top: 20px;
-  clear: both;
+  /* clear: both; */
 }
 
 .slogan {
@@ -139,32 +131,30 @@ body {
   text-decoration: none;
 }
 
+.pf {
+  padding: 10px;
+}
+
 /**** Typography ****/
 
 .h1,
 .h2,
 .h3,
+.nav a,
 .panel-title,
-.nav a {
+.carousel-caption,
+.skills {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   /* margin-top: 0; */
   }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .main .header h1 {
-    font-size: 63px;
-  }
-}
-
 body,
-p,
-li {
+p {
   font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 .intro p,
-.contact p{
+.contact p {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 100;
@@ -176,6 +166,20 @@ li {
   text-transform: uppercase;
 }
 
+.carousel-caption {
+  text-shadow: 3px 3px 0px #000;
+  font-size: 1em;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .main .header h1 {
+    font-size: 63px;
+  }
+  .carousel-caption {
+    font-size: 2.2vw;
+  }
+}
 
 /**** Colors ****/
 
@@ -207,13 +211,13 @@ body,
   color: #F2FAA7;
 }
 
-.jumbotron--banner {
+/* .jumbotron--banner {
   background-image: url("../img/pexels-photo-grey-small.jpg");
   background-size: cover;
   background-position: center center;
   color: white;
   text-shadow: 2px 2px 4px black;
-}
+} */
 
 .panel-heading {
   background-color: #A6A4B1;
@@ -222,4 +226,9 @@ body,
 .skills {
   background-color: #40002D;
   color: white;
+}
+
+.carousel-caption {
+  /* width: 100%; */
+  background-color:rgba( 4, 32, 55, 0.7);
 }
