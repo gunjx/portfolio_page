@@ -25,22 +25,22 @@
   <![endif]-->
 </head>
 
-<body id="body-index">
+<body>
   <div class="nav">
     <div class="nav-left">
       <a href="#">Home</a>
     </div> <!-- /nav-left -->
     <div class="nav-right">
       <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div> <!-- /nav-right -->
   </div> <!-- /nav -->
 
-  <div class="main">
+  <div class="main index" id="index">
     <!-- <div class="jumbotron jumbotron--banner">
       <div class="container container--banner window">
         <div class="header">
@@ -93,7 +93,7 @@
     </div> <!-- /container -->
 
     <div class="container window">
-      <div class="row" id="descript">
+      <div class="row">
         <div class="col col-md-4">
           <h2 class="h2">Portfolio Concept</h2>
           <p>1) Prior experience in consulting as well as online marketing: freelancing projects in SEO and adwords.<br>2) Explain recent advances into the world of web development with Python/Flask and Ruby/Rails.</p>
@@ -111,9 +111,14 @@
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
+  </div> <!-- /main -->
 
+  <div class="main work" id="work">
+    <div class="header">
+      <h1 class="h1">My Work</h1>
+    </div> <!-- /header -->
     <div class="container window">
-      <div class="row" id="work">
+      <div class="row">
         <div class="col col-md-3 col-xs-6 pf pf-1">
           <img src="img/portfolio.png" alt="portfolio placeholder" class="img-responsive">
         </div>
@@ -140,6 +145,176 @@
         </div>
       </div>
     </div>
+  </div> <!-- /main -->
+
+  <div class="main about" id="about">
+    <div class="header">
+      <h1 class="h1">About Me</h1>
+    </div> <!-- /header -->
+
+    <div class="container window">
+      <div class="row" id="about">
+        <div class="image col col-lg-4 col-sm-6 col-xs 12">
+          <img src="img/casual.jpg" alt="A casual picture of me">
+        </div> <!-- /image -->
+
+        <div class="intro col col-lg-4 col-sm-6 col-xs 12">
+          <h2 class="h2">Intro&shy;duction</h2>
+          <p>Hi, my name is Andy!</p>
+          <p>
+            I am a recent business grad with experience in advertising and online marketing. I am interested in anything related to science and technology as well as startups.
+          </p>
+          <p>
+            Besides that I am a traveller, casual gamer, procrastinator and self-educated person.
+          </p>
+        </div> <!-- /intro -->
+
+        <div class="skills col col-lg-4 col-sm-8 col-xs 12">
+          <h2 class="h2">My Skills</h2>
+
+          <ul id="skill-list">
+
+            <li>Online Marketing
+              <ul id="marketing-list">
+                <li>SEO / Content</li>
+                <li>Google Adwords / Facebook Ads</li>
+                <li>CRO / Lan&shy;ding Pages</li>
+                <li>Analytics / Moni&shy;toring</li>
+              </ul>
+            </li> <!-- /marketing-list -->
+
+            <li>Program&shy;ming
+              <ul id="programming-list">
+                <li>C</li>
+                <li>Python / Flask</li>
+                <li>HTML / CSS</li>
+                <li>JS Front&shy;end</li>
+                <li>Ruby / Rails</li>
+              </ul>
+            </li> <!-- /programming-list -->
+
+            <li>Personal
+              <ul id="personal-list">
+                <li>Holistic thinking</li>
+                <li>Willing&shy;ness to learn</li>
+                <li>Ability to commu&shy;nicate</li>
+                <li>Ability to work in a team</li>
+                <li>Ablity to work indepen&shy;dently</li>
+              </ul>
+            </li> <!-- /personal-list -->
+          </ul> <!-- /skill-list -->
+        </div> <!-- /skill -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+    <div class="main-text window">
+      <h3 class="h3">More About Me</h3>
+      <p>
+        I have completed my studies in business administration early 2016. Sine then I have worked as a research assistant as well as a freelancer. I've completed a bunch of marketing and online marketing projects both during my studies as well as therafter. I am mostly self-taught and try to always incorporate the lates developments in content creation and advertising.
+      </p>
+      <p>
+        As of late I've been expanding into the realms of web development. For search engine optimization it was always important for me to have a basic understanding of HTML/CSS. However, I was lacking the ability to independently create and deploy landing pages. Within a total of six months I have now achieved enough understanding of both frontend and backend technologies up to a point where I can create full fledged web apps in Python/Flask and Ruby/Rails.
+      </p>
+      <p>
+        Besides working I like travelling and reading about science and philisophy. I enjoy playing any kind of card and board games. In my free time I follow the latest developments in the German startup scene as well as trends in AI, cryptocurrency and science in general.
+      </p>
+    </div> <!-- /main-text -->
+  </div> <!-- /main -->
+
+  <div class="main faq" id="faq">
+    <div class="header">
+      <h1 class="h1">FAQ</h1>
+    </div> <!-- /header -->
+
+    <!-- Bootstrap accordion -->
+    <div class="container accordion window">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="glyphicon glyphicon-plus"></span> Why did you decide to become a web developer?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              I’ve been working for some time in online marketing. My tasks involve writing content and optimizing SEO pages as well as designing landing pages for SEM advertising. What always frustrated me was the fact that I had to ask the web developers of my clients to change the website and landing pages instead of implementing the changes myself. My inability to modify websites according to the marketing requirements often delayed the project or consumed valuable time of core developers. That’s why in order to give my clients a better and well-rounded service experience, I decided to learn web development.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="glyphicon glyphicon-plus"></span> Who are your clients?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              My clients are internet startups in their early stages. The founders oftentimes have built websites without marketing needs in mind. I help these startups grow through online customer and user acquisition. I also help my clients with the technical implementation to save their time and effort.
+              Right now, I am expanding into a second client base that is non-technical and wants to have a simple yet good looking website.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="glyphicon glyphicon-plus"></span> Who are your references?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              I have worked for dawawas.com, an online photosharing platform with over 100,000 registered users. I helped create and optimize their content landing pages and jumpstarted the website’s non-paid organic traffic to over 1,000 registrations a month.
+              For a small business owner in the real estate business, I have created and implemented google ads as well as the corresponding landing pages. The measures have spurred user growth.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <span class="glyphicon glyphicon-plus"></span> What makes you a good web developer?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+                First of all, I am a problem solver at heart. At times puzzling problems can become frustrating. But I love the rewarding feeling when I finally unravel the mystery. I think my clients benefit greatly from my endurance and passion for what I do.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+  </div> <!-- /main -->
+
+  <div class="main contact" id="contact">
+    <div class="empty">
+    </div>
+    <div class="header window--contact">
+      <h1 class="h1">Contact info</h1>
+    </div> <!-- /header -->
+
+    <div class="jumbotron window window--contact">
+      <div class="container container--window">
+        <h2 class="h2">Drop me a line!</h2>
+        <p class="email">
+          <span class="glyphicon glyphicon-envelope"></span> <span>Email me at:
+          <a href="mailto:spannagel.andreas@gmail.com">spannagel.andreas@gmail.com</a>. </span>
+        </p>
+        <h2 class="h2">Schedule an appointment!</h2>
+        <p class="address">
+          <span class="glyphicon glyphicon-map-marker"></span> Musterstraße 135<br> <span class="glyphicon glyphicon-globe"></span> 12345 Köln, Germany<br>
+          <span class="glyphicon glyphicon-phone"></span> 0221 1234567
+        </p>
+        <p class="slogan">
+           Online marketing and web development can go hand in hand. Let's make it work for you, too.
+        </p>
+      </div> <!-- /container -->
+    </div> <!-- /jumbotron -->
   </div> <!-- /main -->
 
   <!-- jQuery -->

@@ -29,6 +29,7 @@ body {
 
 .nav-right {
   float: right;
+  margin-left: 10%;
   margin-right: 10%;
   padding-right: 10px;
 }
@@ -48,18 +49,39 @@ body {
 
 /**** main ****/
 
+.window,
 .header {
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.header {
+  padding-top: 60px;
+  margin-top: -40px;
   padding-bottom: 20px;
+}
+
+.window--contact {
+  max-width: 600px;
+  margin: 0 10%;
+  padding: 10px;
+}
+
+.container--window {
+  padding: 10px;
+}
+
+.contact .header {
+  padding-top: 10px;
+}
+
+.empty {
+  height: 10px;
 }
 
 .container-fluid {
   padding: 0;
-}
-
-.window {
-  margin: 10px auto;
-  padding: 10px;
-  width: 80%;
 }
 
 .row {
@@ -67,24 +89,18 @@ body {
 }
 
 .col {
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 .h2 {
   padding-bottom: 10px
 }
 
-.jumbotron--banner {
+/* .jumbotron--banner {
   margin: auto;
   padding: auto;
   width: 100%;
-}
-
-.jumbotron--window {
-  max-width: 600px;
-  margin: 0 10%;
-  padding: 10px 0;
-}
+} */
 
 .image img {
   max-width: 100%;
@@ -121,18 +137,8 @@ body {
   font-size: 2.5rem;
 }
 
-.accordion {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .panel-heading a {
   text-decoration: none;
-}
-
-.pf {
-  padding: 10px;
 }
 
 /**** Typography ****/
@@ -184,8 +190,8 @@ p {
 /**** Colors ****/
 
 body,
-.jumbotron--window,
-#body-faq {
+.faq,
+.contact .window--contact {
   background-color: white;
   color: #3D6485;
 }
@@ -195,7 +201,8 @@ body,
   color: white;
 }
 
-#body-contact {
+.contact,
+.window--contact {
   background-color: #A15088;
   color: #3D6485;
 }
