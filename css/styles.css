@@ -5,41 +5,62 @@
 
 body {
   padding-top: 60px;
+  position: relative;
 }
 
 /**** nav ****/
 
-.nav {
+/* .navbar {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   padding: 15px 0;
   z-index: 1;
-}
+} */
 
-.nav-left {
+/* .navbar-left {
   float: left;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   margin-left: 10%;
   padding-left: 10px;
-}
+} */
 
-.nav-right {
+/* .navbar-right {
   float: right;
   margin-left: 10%;
   margin-right: 10%;
   padding-right: 10px;
-}
+} */
 
-.nav ul li {
+/* nav ul li {
   display: inline-block;
   padding-left: 50px;
+} */
+
+.navbar>.container-fluid .navbar-brand {
+  margin-left: calc(8px + 10%);
 }
 
-.nav a {
+@media (min-width: 768px) {
+  .container-fluid>.navbar-header {
+      margin-left: 7.7%;
+      /* padding-left: 8.5%; */
+  }
+}
+
+.navbar-toggle {
+  margin-right: calc(22px + 10%);
+}
+
+.navbar-right {
+  padding-right: 10.5%;
+  margin-left: 10%;
+}
+
+.navbar a {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-decoration: none;
@@ -48,6 +69,10 @@ body {
 }
 
 /**** main ****/
+
+.index {
+  margin-top: -10px;
+}
 
 .window,
 .header {
@@ -60,6 +85,10 @@ body {
   padding-top: 60px;
   margin-top: -40px;
   padding-bottom: 20px;
+}
+
+.contact {
+  padding-top: 60px;
 }
 
 .window--contact {
@@ -76,11 +105,9 @@ body {
   padding-top: 10px;
 }
 
-.empty {
-  height: 10px;
-}
-
-.container-fluid {
+.navbar .container-fluid,
+.index .container-fluid,
+.iframe {
   padding: 0;
 }
 
@@ -102,8 +129,12 @@ body {
   width: 100%;
 } */
 
+.image {
+  padding: 0;
+}
+
 .image img {
-  max-width: 100%;
+  width: 100%;
 }
 
 /* .column {
@@ -141,12 +172,25 @@ body {
   text-decoration: none;
 }
 
+.footer .container-fluid {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: flex-end;
+  /* align-items: center; */
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+.footer--element {
+  padding: 0 5px;
+}
+
 /**** Typography ****/
 
 .h1,
 .h2,
 .h3,
-.nav a,
+nav a,
 .panel-title,
 .carousel-caption,
 .skills {
@@ -198,24 +242,65 @@ body,
 
 .panel-default>.panel-heading {
   background-color: #496C89;
-  color: white;
+  color: #FFFFFF;
 }
 
-.contact,
-.window--contact {
-  background-color: #A15088;
-  color: #3D6485;
+/*** Dark blue navigation background color ***/
+.navbar,
+.footer {
+  background-color: #042037;
+  color: #FFFFFF;
 }
 
-.nav {
+/*** White links ***/
+.navbar-inverse .nav li a,
+.navbar-inverse .navbar-brand {
+  color: #FFFFFF;
+}
+
+/*** Remove border below link list ***/
+.nav-tabs {
+  border-bottom: 0px solid #042037;
+}
+
+/*** Inverse link color and background when hovered/selected ***/
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #042037;
+  background-color: #718DA5;
+}
+
+/*** Normal colors plus small border when selected ***/
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>li>a:focus {
+  /* color: #FFFFFF; */
   background-color: #042037;
 }
-.nav a {
-  color: white;
+
+/*** Light blue burger menu when hovered/selected ***/
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #718DA5;
 }
 
-.nav a:hover {
-  color: #F2FAA7;
+/*** White border around burger menu and hovered/selected links ***/
+.navbar-inverse .navbar-toggle,
+.nav-tabs>li>a:hover {
+  border-color: #FFFFFF;
+}
+
+/*** Border around hovered/selected links, round edges ***/
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover {
+  border: 1px solid #FFFFFF;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  /* border-radius: 4px 4px 0 0; */
+  border-radius: 0;
 }
 
 /* .jumbotron--banner {
@@ -225,6 +310,41 @@ body,
   color: white;
   text-shadow: 2px 2px 4px black;
 } */
+
+/* .contact,
+.window--contact {
+  background-color: #A15088;
+  color: #3D6485;
+} */
+
+/*** Parallax effect with fixed background image ***/
+.contact {
+  background-image: url("../img/telephone.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  /* color: white; */
+  /* padding: 100px; */
+  /* padding-top: 50px; */
+  /* height: 400px; */
+}
+
+.contact .header,
+.contact .jumbotron {
+  /* background-color: #C180AD; */
+  border: 1px solid #C180AD;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 25px 25px 0 0;
+  color: #3D6485;
+}
+
+.contact .header {
+border-radius: 25px 25px 0 0;
+}
+
+.contact .jumbotron {
+border-radius: 0 0 25px 25px;
+}
 
 .panel-heading {
   background-color: #A6A4B1;
@@ -238,4 +358,16 @@ body,
 .carousel-caption {
   /* width: 100%; */
   background-color:rgba( 4, 32, 55, 0.7);
+}
+
+.form-control {
+  width: 80%;
+}
+
+.twitter-follow-button {
+  color: lightblue;
+}
+
+.twitter-follow-button:hover {
+    color: #FFFFFF;
 }
