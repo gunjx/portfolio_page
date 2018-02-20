@@ -46,7 +46,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand gototop" href="#index">Home</a>
       </div> <!-- /navbar-header -->
 
       <div class="navbar-collapse collapse">
@@ -433,6 +433,11 @@
         });
       }
       return false;
+    });
+    $('.gototop').on('click', function (event) {
+      event.preventDefault();
+      $('html,body').animate( {
+        scrollTop: 0}, 500);
     });
   </script>
 
