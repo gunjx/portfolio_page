@@ -8,7 +8,9 @@ body {
   position: relative;
 }
 
-/**** nav ****/
+/*************************/
+/****** Navigation *******/
+/*************************/
 
 /* .navbar {
   position: fixed;
@@ -68,11 +70,11 @@ body {
   -webkit-transition: color 500ms;
 }
 
-/**** main ****/
+/*************************/
+/********* main **********/
+/*************************/
 
-.index {
-  margin-top: -10px;
-}
+/*** General stylings ***/
 
 .window,
 .header {
@@ -87,27 +89,10 @@ body {
   padding-bottom: 20px;
 }
 
-.contact {
-  padding-top: 60px;
-}
-
-.window--contact {
-  max-width: 600px;
-  margin: 0 10%;
-  padding: 10px;
-}
-
-.container--window {
-  padding: 10px 0;
-}
-
-.contact .header {
-  padding-top: 10px;
-}
-
 .navbar .container-fluid,
 .index .container-fluid,
-.iframe {
+.iframe,
+.image {
   padding: 0;
 }
 
@@ -123,15 +108,21 @@ body {
   padding-bottom: 10px
 }
 
+/*** Specific stylings ***/
+
+/*** Index ***/
+
+.index {
+  margin-top: -10px;
+}
+
 /* .jumbotron--banner {
   margin: auto;
   padding: auto;
   width: 100%;
 } */
 
-.image {
-  padding: 0;
-}
+/*** About ***/
 
 .image img {
   width: 100%;
@@ -153,12 +144,52 @@ body {
   /* clear: both; */
 }
 
-.slogan {
-  padding-top: 15px;
-}
+/*** FAQ ***/
 
 .panel-heading a {
   text-decoration: none;
+}
+
+.row--faq {
+  display: flex;
+}
+
+.h1--faq {
+  padding-left: 10px;
+}
+
+.modal-button {
+  /* float: right; */
+  margin: 20px 0 10px;
+  margin-left: auto;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.modal-embed {
+  height: 500px;
+  width: 100%;
+  padding: 10px;
+}
+
+/*** Contact ***/
+
+.contact {
+  padding-top: 60px;
+}
+
+.contact .header {
+  padding-top: 10px;
+}
+
+.window--contact {
+  max-width: 600px;
+  margin: 0 10%;
+  padding: 10px;
+}
+
+.container--contact {
+  padding: 10px 0;
 }
 
 .email,
@@ -167,15 +198,16 @@ body {
   -webkit-transition: all 400ms;
 }
 
-.email:hover,
-.address:hover {
-  font-size: 2.5rem;
+.slogan {
+  padding-top: 15px;
 }
 
 .form {
   padding-left: 0;
   padding-right: 0;
 }
+
+/*** Footer ***/
 
 .footer .container-fluid {
   display: flex;
@@ -190,7 +222,9 @@ body {
   padding: 0 5px;
 }
 
-/**** Typography ****/
+/*************************/
+/****** Typography *******/
+/*************************/
 
 .h1,
 .h2,
@@ -227,6 +261,11 @@ p {
   font-size: 1em;
 }
 
+.email:hover,
+.address:hover {
+  font-size: 2.5rem;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .main .header h1 {
@@ -237,7 +276,9 @@ p {
   }
 }
 
-/**** Colors ****/
+/*************************/
+/******** Colors *********/
+/*************************/
 
 body,
 .faq,
@@ -347,11 +388,11 @@ body,
 }
 
 .contact .header {
-border-radius: 25px 25px 0 0;
+  border-radius: 25px 25px 0 0;
 }
 
 .contact .jumbotron {
-border-radius: 0 0 25px 25px;
+  border-radius: 0 0 25px 25px;
 }
 
 .panel-heading {
