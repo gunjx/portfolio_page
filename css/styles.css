@@ -354,6 +354,20 @@ body,
   border-radius: 0;
 }
 
+.tooltip-inner {
+  color: #FFFFFF;
+  background: #042037;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #042037;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #042037;
+}
+
+
 /* .jumbotron--banner {
   background-image: url("../img/pexels-photo-grey-small.jpg");
   background-size: cover;

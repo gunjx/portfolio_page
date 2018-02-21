@@ -138,18 +138,18 @@
       <div class="row">
         <div class="col col-md-4">
           <h2 class="h2">Portfolio Concept</h2>
-          <p>1) Prior experience in consulting as well as online marketing: freelancing projects in SEO and adwords.<br>2) Explain recent advances into the world of web development with Python/Flask and Ruby/Rails.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>This portfolio should help you decide if I can offer something of value to you. You will find information about my previous work as well as about me and my skills. Feel free to browse my page and leave a comment in the contact section.</p>
+          <p><button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="A brief preview: I am an online-marketer and soon-to-be web developer" role="tooltip">View details &raquo;</button></p>
         </div> <!-- /col -->
         <div class="col col-md-4">
           <h2 class="h2">Project Goals</h2>
-          <p>During the next three months spend around 40 hours a week in order to finish the course by March, 2018. After that work full time on creating websites and full stack web shops for employee or freelance clients.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>This project helps me grow my knowledge and skills a s a web developer. I am especially interested in the <a href="https://en.wikipedia.org/wiki/Front_and_back_ends" class="tooltip--link" id="item1" title="Read more about frontend vs. backend at wikipedia">backend programming</a> aspects of web development. I hope to complete the course by the end of March.</p>
+          <p><button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Prior to this course I have completed Harvard's CS50 course that focuses on the languages C and Python.">View details &raquo;</button></p>
        </div> <!-- /col -->
         <div class="col col-md-4">
           <h2 class="h2">Course Goals</h2>
-          <p>Goal is to learn enough in web development to be employable by the end of the course (entry level position). Freelancing is an option, because clients might need both online marketing and web development.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>My course goal is to accumulate enough knowledge and skills comparable to a junior web developer. Later, I would like to create beautiful websites and full stack web shops for clients either as a freelancer or as part of a team in a company.</</p>
+          <p><button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Need a web developer? Check the contacts section.">View details &raquo;</button></p>
         </div> <!-- /col -->
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -421,6 +421,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- Script tags with JavaScript files -->
+
+  <!-- Smooth scrolling -->
   <script type="text/javascript">
     var $root = $('html, body');
     $('.navbar-nav a').click(function() {
@@ -434,11 +436,20 @@
       }
       return false;
     });
+    // Modify script to include home button
     $('.gototop').on('click', function (event) {
       event.preventDefault();
       $('html,body').animate( {
         scrollTop: 0}, 500);
     });
+  </script>
+
+  <!-- Tooltip script -->
+  <script>
+    $(function () {
+      $('.tooltip--link').tooltip();
+      $('[data-toggle="tooltip"]').tooltip();
+   });
   </script>
 
 </body>
