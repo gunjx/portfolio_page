@@ -12,54 +12,9 @@ body {
 /****** Navigation *******/
 /*************************/
 
-/* .navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 15px 0;
-  z-index: 1;
-} */
-
-/* .navbar-left {
-  float: left;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 10%;
-  padding-left: 10px;
-} */
-
-/* .navbar-right {
-  float: right;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-right: 10px;
-} */
-
-/* nav ul li {
-  display: inline-block;
-  padding-left: 50px;
-} */
-
-.navbar>.container-fluid .navbar-brand {
-  margin-left: calc(8px + 10%);
-}
-
-@media (min-width: 768px) {
-  .container-fluid>.navbar-header {
-      margin-left: 7.7%;
-      /* padding-left: 8.5%; */
-  }
-}
-
-.navbar-toggle {
-  margin-right: calc(22px + 10%);
-}
-
-.navbar-right {
-  padding-right: 10.5%;
-  margin-left: 10%;
+.navbar .container-fluid {
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .navbar a {
@@ -71,13 +26,13 @@ body {
 }
 
 /*************************/
-/********* main **********/
+/********* Main **********/
 /*************************/
 
 /*** General stylings ***/
 
-.window,
-.header {
+.header,
+.container-fluid {
   margin: 10px auto;
   padding: 10px;
   width: 80%;
@@ -89,15 +44,8 @@ body {
   padding-bottom: 20px;
 }
 
-.navbar .container-fluid,
-.index .container-fluid,
-.iframe,
-.image {
-  padding: 0;
-}
-
 .row {
-  margin: -10px -10px;
+  margin: -10px;
 }
 
 .col {
@@ -110,29 +58,25 @@ body {
 
 /*** Specific stylings ***/
 
-/*** Index ***/
+/******** Index ********/
+
+.index .container {
+  padding: 0;
+  width: 100%;
+}
 
 .index {
   margin-top: -10px;
 }
 
-/* .jumbotron--banner {
-  margin: auto;
-  padding: auto;
-  width: 100%;
-} */
+/******** About ********/
 
-/*** About ***/
-
-.image img {
+.image img,
+.carousel img,
+.container-fluid img {
   width: 100%;
+  object-fit: cover;
 }
-
-/* .column {
-  width: 33.3333333333333333%;
-  float: left;
-  hyphens: auto;
-} */
 
 .skills>ul {
   padding-left: 22%;
@@ -141,28 +85,20 @@ body {
 
 .main-text {
   padding-top: 20px;
-  /* clear: both; */
 }
 
-/*** FAQ ***/
+/******** FAQ *********/
 
-.panel-heading a {
-  text-decoration: none;
-}
-
-.row--faq {
+.faq .row {
   display: flex;
 }
 
-.h1--faq {
-  padding-left: 10px;
+.faq .row {
+  padding: 0 10px;
 }
 
 .modal-button {
-  /* float: right; */
-  margin: 20px 0 10px;
-  margin-left: auto;
-  margin-right: 10px;
+  margin: 20px 0 10px auto;
   align-self: center;
 }
 
@@ -172,23 +108,25 @@ body {
   padding: 10px;
 }
 
-/*** Contact ***/
+.panel-heading a {
+  text-decoration: none;
+}
+
+/******** Contact ********/
 
 .contact {
   padding-top: 60px;
 }
 
-.contact .header {
-  padding-top: 10px;
-}
-
-.window--contact {
-  max-width: 600px;
+.contact .header,
+.contact .jumbotron {
+  max-width: 45%;
+  min-width: 320px;
   margin: 0 10%;
   padding: 10px;
 }
 
-.container--contact {
+.contact .container {
   padding: 10px 0;
 }
 
@@ -202,23 +140,16 @@ body {
   padding-top: 15px;
 }
 
-.form {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/*** Footer ***/
+/******** Footer ********/
 
 .footer .container-fluid {
   display: flex;
-  /* flex-direction: row-reverse; */
   justify-content: flex-end;
-  /* align-items: center; */
   padding: 15px 0;
   margin: 0 auto;
 }
 
-.footer--element {
+.footer__element {
   padding: 0 5px;
 }
 
@@ -226,22 +157,22 @@ body {
 /****** Typography *******/
 /*************************/
 
-.h1,
-.h2,
-.h3,
-nav a,
-.panel-title,
-.carousel-caption,
-.skills,
-.form label {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  /* margin-top: 0; */
-  }
-
 body,
 p {
   font-family: Georgia, Times, 'Times New Roman', serif;
 }
+
+.header,
+.main h2,
+.main h3,
+.navbar a,
+.panel-title,
+.carousel-caption,
+.skills,
+.form label {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
+  /* margin-top: 0; */
+  }
 
 .intro p,
 .contact p {
@@ -284,12 +215,13 @@ p {
 
 body,
 .faq,
-.contact .window--contact {
-  background-color: white;
+.contact .header,
+.contact .jumbotron {
+  background-color: #FFFFFF;
   color: #3D6485;
 }
 
-.panel-default>.panel-heading {
+.panel-default .panel-heading {
   background-color: #496C89;
   color: #FFFFFF;
 }
@@ -302,8 +234,8 @@ body,
 }
 
 /*** White links ***/
-.navbar-inverse .nav li a,
-.navbar-inverse .navbar-brand {
+.navbar .navbar-header a,
+.navbar-collapse .nav li a {
   color: #FFFFFF;
 }
 
@@ -313,40 +245,40 @@ body,
 }
 
 /*** Inverse link color and background when hovered/selected ***/
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar .navbar-right .active a:hover,
+.navbar .navbar-right li a:hover {
   color: #042037;
   background-color: #718DA5;
 }
 
 /*** Normal colors plus small border when selected ***/
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>li>a:focus {
+.navbar .navbar-right .active a,
+.navbar .navbar-right .active a:focus,
+.navbar .navbar-right li a:focus {
   /* color: #FFFFFF; */
   background-color: #042037;
 }
 
 /*** Light when hovered/selected ***/
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus {
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
   background-color: #718DA5;
   border-color: #FFFFFF;
   color: #FFFFFF;
 }
 
 /*** White border around burger menu and hovered/selected links ***/
-.navbar-inverse .navbar-toggle,
-.nav-tabs>li>a:hover {
+.navbar .navbar-toggle,
+.nav-tabs li a:hover {
   border-color: #FFFFFF;
 }
 
 /*** Border around hovered/selected links, round edges ***/
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover,
-.nav-tabs>li>a:focus,
-.nav-tabs>li>a:hover {
+.nav-tabs li.active a,
+.nav-tabs li.active a:focus,
+.nav-tabs li.active a:hover,
+.nav-tabs li a:focus,
+.nav-tabs li a:hover {
   border: 1px solid #FFFFFF;
   border-top-color: transparent;
   border-bottom-color: transparent;
@@ -366,21 +298,6 @@ body,
 .tooltip.top .tooltip-arrow {
   border-top-color: #042037;
 }
-
-
-/* .jumbotron--banner {
-  background-image: url("../img/pexels-photo-grey-small.jpg");
-  background-size: cover;
-  background-position: center center;
-  color: white;
-  text-shadow: 2px 2px 4px black;
-} */
-
-/* .contact,
-.window--contact {
-  background-color: #A15088;
-  color: #3D6485;
-} */
 
 /*** Parallax effect with fixed background image ***/
 .contact {
@@ -418,6 +335,7 @@ body,
 .skills {
   background-color: #40002D;
   color: white;
+  border: 10px solid #FFFFFF;
 }
 
 .carousel-caption {
@@ -440,12 +358,4 @@ body,
 .btn-primary:active {
   background-color: #496C89;
   border-color: #123552;
-}
-
-.twitter-follow-button {
-  color: lightblue;
-}
-
-.twitter-follow-button:hover {
-    color: #FFFFFF;
 }
