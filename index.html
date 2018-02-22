@@ -249,7 +249,7 @@
       </div> <!-- /row -->
     </div> <!-- /container -->
 
-    <div class="main-text container-fluid">
+    <div class="main-text container-fluid about-text">
       <h3>More About Me</h3>
       <p>
         I have completed my studies in business administration early 2016. Sine then I have worked as a research assistant as well as a freelancer. I've completed a bunch of marketing and online marketing projects both during my studies as well as therafter. I am mostly self-taught and try to always incorporate the lates developments in content creation and advertising.
@@ -379,7 +379,7 @@
         </p>
       </div> <!-- /container -->
       <div class="container form">
-        <form class="contact-form" action="index.html" method="post">
+        <form class="contact-form" id="contact-form" name="contact-form" action="#showInput" onsubmit="return false;">
           <div class="row">
             <div class="form-group col col-xs-12 col-sm-6">
               <label for="name">First and second name*</label>
@@ -395,13 +395,19 @@
             <textarea id="message-box" class="form-control" name="message-box" style="resize:none" rows="5" cols="40" placeholder="Place your message here ..." required="required"></textarea>
           </div>
             <div class="form-group">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="btn-submit" class="btn btn-primary" onclick="showInput();">Submit</button>
           </div>
         </form>
-      </div>
+      </div> <!-- /form -->
+      <div class="container" id="showInput">
+        <h3>Your Input:</h3>
+        <p id="showName"></p>
+        <p id="showEmail"></p>
+        <p id="showMessage"></p>
+      </div> <!-- /container -->
     </div> <!-- /jumbotron -->
-  </div> <!-- /main -->
 
+  </div> <!-- /main -->
 
 
   <footer class="footer">
@@ -421,6 +427,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- Script tags with JavaScript files -->
+
+  <!-- Display user input -->
+  <script type="text/javascript" src="js/scripts.js"></script>
 
   <!-- Smooth scrolling -->
   <script type="text/javascript">

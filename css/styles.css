@@ -216,7 +216,8 @@ p {
 body,
 .faq,
 .contact .header,
-.contact .jumbotron {
+.contact .jumbotron,
+.main-text {
   background-color: #FFFFFF;
   color: #3D6485;
 }
