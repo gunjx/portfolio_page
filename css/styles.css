@@ -29,7 +29,7 @@ body {
 /********* Main **********/
 /*************************/
 
-/*** General stylings ***/
+/*** General stylings ****/
 
 .header,
 .container-fluid {
@@ -58,7 +58,7 @@ body {
 
 /*** Specific stylings ***/
 
-/******** Index ********/
+/********* Index *********/
 
 .index .container {
   padding: 0;
@@ -69,7 +69,63 @@ body {
   margin-top: -10px;
 }
 
-/******** About ********/
+/********* Work **********/
+
+/*** Responsive squared images hack ***/
+#work .col {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50%;
+}
+
+@media (min-width: 768px) { /* Alternative: 992px*/
+  #work .col {
+    padding-bottom: 25%;
+  }
+}
+
+/*** Responsive squared images hack ***/
+#work .img-responsive {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 10px;
+}
+
+.backgr-transp,
+.info {
+  position: absolute;
+  display: none;
+}
+
+.backgr-transp {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba( 4, 32, 55, 0.7);
+}
+
+.info {
+  top: 40%;
+  left: 55%;
+  transform: translateX(-55%) translateY(-40%);
+  color: #FFFFFF;
+  font-family: Futura;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+}
+
+.proj-title {
+  font-weight: 100;
+}
+
+/********* About *********/
 
 .image img,
 .carousel img,
@@ -87,14 +143,10 @@ body {
   padding-top: 20px;
 }
 
-/******** FAQ *********/
+/********* FAQ ***********/
 
-.faq .row {
+.flex {
   display: flex;
-}
-
-.faq .row {
-  padding: 0 10px;
 }
 
 .modal-button {
@@ -108,11 +160,12 @@ body {
   padding: 10px;
 }
 
-.panel-heading a {
+.panel-heading a,
+.contact a {
   text-decoration: none;
 }
 
-/******** Contact ********/
+/********* Contact *******/
 
 .contact {
   padding-top: 60px;
@@ -140,7 +193,7 @@ body {
   padding-top: 15px;
 }
 
-/******** Footer ********/
+/********* Footer ********/
 
 .footer .container-fluid {
   display: flex;
@@ -217,7 +270,9 @@ body,
 .faq,
 .contact .header,
 .contact .jumbotron,
-.main-text {
+.main-text,
+.form-control,
+.contact a {
   background-color: #FFFFFF;
   color: #3D6485;
 }
