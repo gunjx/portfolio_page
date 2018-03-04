@@ -87,7 +87,7 @@ $(document).ready(function() {
   $(".form-control").css("background-color", "rgba(242, 250, 167, 0.5)");
 
   // Show user input with event listener
-  // Mark text fields when submitted empty frustrating
+  // Mark text fields when required fields are empty
   // Hide text fields after submitting
   $("#btn-submit").on("click", function() {
     let name = $("#name").val();
@@ -118,22 +118,6 @@ $(document).ready(function() {
       $("#char-count").css("color", "#3D6485");
     }
   });
-
-  // Show user input using html tag onclick(showInput;)
-  // function showInput() {
-  // document.getElementById("showName").innerHTML = document.getElementById("name").value;
-  //   document.getElementById("showEmail").innerHTML = document.getElementById("email").value;
-  //   document.getElementById("showMessage").innerHTML = document.getElementById("message-box").value;
-  // }
-
-  // Show user input using appendChild
-  // function processUserData(){
-  //   let userName = document.getElementById("name").value;
-  //   let p = document.createElement('p');
-  //   let i = document.createTextNode(userName);
-  //   p.appendChild(i);
-  //   document.getElementById('userInput').appendChild(p);
-  // }
 
 // End document.ready
 });
