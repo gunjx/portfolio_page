@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   // Smooth scrolling
   var $root = $('html, body');
-  $('.navbar-nav a').click(function() {
+  $('.navbar-nav a, a.navbar-brand').click(function() {
     var href = $.attr(this, 'href');
     if (href != undefined && href != '#') {
       $root.animate({
@@ -39,13 +39,6 @@ $(document).ready(function() {
       });
     }
     return false;
-  });
-
-  // Modify script to include home button
-  $('.gototop').on('click', function(event) {
-    event.preventDefault();
-    $('html,body').animate ({
-      scrollTop: 0}, 500);
   });
 
   // Tooltip script
