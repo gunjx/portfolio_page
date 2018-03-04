@@ -24,7 +24,8 @@ function initMap() {
   });
 }
 
-$(document).ready(function() { // Wait for DOM to load
+// Wait for DOM to load
+$(document).ready(function() {
 
   // Smooth scrolling
   var $root = $('html, body');
@@ -92,8 +93,9 @@ $(document).ready(function() { // Wait for DOM to load
     let name = $("#name").val();
     let email = $("#email").val();
     let message = $("#message-box").val();
-    console.log(message); // Check functionality
-    if (name || email || message === "") {
+    // Check functionality
+    console.log(message);
+    if (name === "" || email === "" || message === "") {
       $(".form-control").css("border", "2px solid red");
     } else {
       $("#thankyou").html("Thank you for your message!");
@@ -133,4 +135,5 @@ $(document).ready(function() { // Wait for DOM to load
   //   document.getElementById('userInput').appendChild(p);
   // }
 
-}); // End document.ready
+// End document.ready
+});
