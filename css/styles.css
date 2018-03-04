@@ -173,10 +173,17 @@ body {
 
 .contact .header,
 .contact .jumbotron {
-  max-width: 45%;
-  min-width: 320px;
+  width: 80%;
   margin: 0 10%;
   padding: 10px;
+}
+
+@media (min-width: 768px) { /* Alternative: 992px*/
+  .contact .header,
+  .contact .jumbotron {
+    width: 614px;
+    min-width: 45%;
+  }
 }
 
 .contact .container {
