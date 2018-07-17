@@ -22,8 +22,10 @@ Features include:
 
 ## Installation & Usage
 
-* Modify index.html to your needs, e.g. edit headlines, texts and personal information in all sections, embed your Youtube video and location on Google Maps.
+* Modify index.html to your needs, e.g. edit headlines, texts and personal information in all sections and embed your Youtube video.
+* Change your Google Maps location under js/scripts.js, var myLatLng = {lat: 52.527120, lng: 13.412182}; with lat and lng being the coordinates of your location.
 * Add images in img folder and link them in index.html.
+* Change your work samples under js/work.js.
 * Add your CV in assets folder and link it in index.html.
 * Link contact form to an email backend service such as Formspree, more information at: https://formspree.io/.
 * Adjust twitter and facebook links.
@@ -45,4 +47,6 @@ This project helped me getting familiar with:
 * Basic JavaScript
 * jQuery library
 * Manipulating DOM elements
+* iframes
+* Forms and validation
 * Using APIs and working with documentations
